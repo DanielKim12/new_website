@@ -13,12 +13,30 @@
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About Me</a></li>
-                <li><a href="#about">Work Experience</a></li>
-                <li><a href="#about">Projects</a></li>
-                <li><a href="#about">Publications</a></li>
-                <li><a href="#about">Contact</a></li>
+                <li><a href="#experience">Work Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#publications">Publications/Gradschool projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
+        <nav id="hamburger-nav">
+            <div class="logo">GUK IL KIM</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About Me</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Work Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#publications" onclick="toggleMenu()">Publications</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
     <script src="script.js"></script>
 </body>
 </html>
