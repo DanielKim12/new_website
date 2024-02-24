@@ -26,8 +26,7 @@ a, .btn {
 
 /* keeps the image within the div */
 img {
-    overflow: hidden;
-    border-radius: 20%;
+    border-radius: 2rem;
 }
 
 
@@ -160,10 +159,10 @@ section {
     gap: 1rem;
 }
 
-.section_pic-container {
+.section_pic-container_main {
     display: flex;
-    height: 580px;
-    width: 580px;
+    height: 500px;
+    width: 600px;
     margin: auto 0;
     justify-content: center;
 }
@@ -265,6 +264,8 @@ section {
 .about-details-container {
     justify-content: center;
     flex-direction: column;
+    width: 70%;
+    padding-bottom: 10px;
 }
 
 .about-containers, .about-details-container { 
@@ -273,11 +274,13 @@ section {
 
 .about-pic { 
     border-radius: 2rem;
+    width: 420px;
+    height: 570px;
 }
 
 .arrow { 
     position: absolute;
-    /* right: -5rem; */
+    right: 3.5rem; 
     bottom: 2.5rem;
 }
 
@@ -299,8 +302,6 @@ section {
 }
 
 .section_pic-container {
-    height: 450px; 
-    width: 450px;
     margin: auto 0;
 }
 
