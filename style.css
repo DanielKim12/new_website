@@ -233,6 +233,7 @@ section {
 .btn-color-2:hover {
     background: rgb(68,98,74);
     cursor: white;
+    color: white;
 }
 
 .btn-color-1:hover {
@@ -313,4 +314,38 @@ section {
 .reg-text {
     color: black;
     text-align: justify;
+}
+
+/* need to update here */
+/* .experience-details-container {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 2px solid red;
+} */
+
+.section-container-exp {
+    display: flex;
+    flex-direction: row; /* Ensures children are laid out in a row */
+    gap: 2rem; /* Spacing between the two flex items */
+    padding: 20px; /* Padding around the entire container */
+    height: 80%; /* Sets the height of the container, adjust as necessary */
+  }
+  
+  .experience-details-container {
+    display: flex;
+    flex: 1; /* Each takes up an equal amount of space */
+    flex-direction: row; /* Aligns child elements (boxes) vertically */
+    gap: 1rem; /* Space between child elements */
+  }
+  
+  .content1, .content2 {
+    flex: 1; /* Each takes up an equal amount of space */
+    display: flex;
+    flex-direction: column; /* Aligns child elements (boxes) vertically */
+    gap: 1rem; /* Space between child elements */
+    border: 2px solid red; /* Corrected border property */
+    border-radius: 8px; /* Rounded corners for the containers */
+    justify-content: center;
 }
