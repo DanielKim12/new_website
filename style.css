@@ -325,27 +325,73 @@ section {
     border-radius: 2px solid red;
 } */
 
-.section-container-exp {
-    display: flex;
-    flex-direction: row; /* Ensures children are laid out in a row */
-    gap: 2rem; /* Spacing between the two flex items */
-    padding: 20px; /* Padding around the entire container */
-    height: 80%; /* Sets the height of the container, adjust as necessary */
-  }
-  
-  .experience-details-container {
-    display: flex;
-    flex: 1; /* Each takes up an equal amount of space */
-    flex-direction: row; /* Aligns child elements (boxes) vertically */
-    gap: 1rem; /* Space between child elements */
-  }
-  
-  .content1, .content2 {
-    flex: 1; /* Each takes up an equal amount of space */
-    display: flex;
-    flex-direction: column; /* Aligns child elements (boxes) vertically */
-    gap: 1rem; /* Space between child elements */
-    border: 2px solid red; /* Corrected border property */
-    border-radius: 8px; /* Rounded corners for the containers */
-    justify-content: center;
+/* experience part */
+/* .container{
+	width: 100%;
+	padding: 35px 10%;
+}
+.container{
+	padding-right: calc(10% - 30px);
+} */
+main.row{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 20px;
+}
+.col header.title{
+    font-size: 2rem;
+	color: rgb(58, 84, 64);
+	padding: 0px 0px 20px 30px;
+}
+.col .contents{
+	padding: 0px 30px;
+    margin-left: 2rem;
+	border-left: 2px solid rgb(68,98,74);
+}
+.col .contents .box {
+	position: relative;
+	padding: 10px;
+	border: 1px solid rgb(220, 207, 186);
+	background-color: rgb(220, 207, 186);
+	cursor: pointer;
+	transition: all 0.4s;
+	margin-bottom: 25px;
+}
+.col .contents .box:hover{
+	box-shadow: 0px 3px 12px 0px rgb(251, 237, 214);
+	border: 1px solid transparent;
+}
+.col .contents .box::before{
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	right: calc(100% + 22px);
+	top: 0;
+	background-color: rgb(58, 84, 64);
+	border: 2px solid white;
+}
+.box h4{
+	position: relative;
+	color: rgb(58, 84, 64);
+}
+.box h3{
+	font-size: 19px;
+	padding: 10px 0px 6px;
+	font-family: helvetica;
+	color: #444;
+}
+.box p{
+	line-height: 1.2;
+	color: #666;
+	font-size: 17px;
+}
+@media(max-width: 768px){
+	main.row{
+		grid-template-columns: 1fr;
+	}
+	.row .col:nth-child(2){
+		margin-top: 30px;
+	}
 }
