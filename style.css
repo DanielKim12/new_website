@@ -257,9 +257,13 @@ section {
 }
 
 .about-containers { 
-    gap: 2rem;
+    gap: 1rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
+    justify-content: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    /* padding-top: 9rem; */
 }
 
 .about-details-container {
@@ -285,16 +289,34 @@ section {
     bottom: 2.5rem;
 }
 
+/* experience 
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+} */
+
+.experience-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .details-container {
     padding: 1.5rem;
     flex: 1;
     background: rgb(251, 237, 214);
     border-radius: 2rem;
-    border: rgb(58, 84, 64) 0.1rem solid;
-    border-color: rgb(68,98,74);
+    border: rgb(208, 196, 176) 0.8rem solid;
+    border-color: rgb(208, 196, 176);
     text-align: center;
-    /* color: rgb(68,98,74); */
+    transition: box-shadow 0.3s; /* Smooth transition for the effect */
 }
+
+.details-container:hover {
+    box-shadow: 0px 3px 12px 0px rgb(68,98,74); /* Shadow effect on hover */
+}
+
 
 .section-container { 
     gap: 2rem;
@@ -316,23 +338,6 @@ section {
     text-align: justify;
 }
 
-/* need to update here */
-/* .experience-details-container {
-    display: flex;
-    width: 80%;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 2px solid red;
-} */
-
-/* experience part */
-/* .container{
-	width: 100%;
-	padding: 35px 10%;
-}
-.container{
-	padding-right: calc(10% - 30px);
-} */
 main.row{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -351,14 +356,14 @@ main.row{
 .col .contents .box {
 	position: relative;
 	padding: 10px;
-	border: 1px solid rgb(220, 207, 186);
-	background-color: rgb(220, 207, 186);
+	border: 1px solid rgb(208, 196, 176);
+	background-color: rgb(208, 196, 176);
 	cursor: pointer;
 	transition: all 0.4s;
 	margin-bottom: 25px;
 }
 .col .contents .box:hover{
-	box-shadow: 0px 3px 12px 0px rgb(251, 237, 214);
+	box-shadow: 0px 3px 12px 0px rgb(68,98,74);
 	border: 1px solid transparent;
 }
 .col .contents .box::before{
@@ -375,17 +380,20 @@ main.row{
 .box h4{
 	position: relative;
 	color: rgb(58, 84, 64);
+    padding-left: 5px;
 }
 .box h3{
 	font-size: 19px;
 	padding: 10px 0px 6px;
 	font-family: helvetica;
 	color: #444;
+    padding-left: 5px;
 }
 .box p{
 	line-height: 1.2;
 	color: #666;
 	font-size: 17px;
+    padding-left: 5px;
 }
 @media(max-width: 768px){
 	main.row{
@@ -397,29 +405,70 @@ main.row{
 }
 
 /* projects section */
+#projects { 
+    position: relative;
+    height: 90vh;
+}
 
+.color-container {
+    border-color: rgb(208, 196, 176);
+    background: rgb(208, 196, 176);
+}
 
+.article-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: space-between; /* Distribute space between items */
+    width: 300px; /* Adjust based on your design requirements */
+    height: 430px; /* Adjust to accommodate both image and buttons */
+    overflow: hidden; /* Ensures nothing spills outside the container */
+    border-radius: 2rem; /* Applies the border rounding to the container itself */
+    padding: 10px; /* Adds some space inside container */
+}
 
+.project-img {
+    width: 100%; /* Image will fill the width of the container */
+    height: auto; /* Adjust the height automatically */
+    object-fit: cover; /* Ensures the image covers the allocated space, but may be cropped */
+    flex-grow: 1; /* Allows the image to grow as needed */
+    border-radius: 1rem; /* Rounded corners for the image */
+}
+
+.project-title {
+    margin: 1rem;
+    color: black;
+}
+
+.project-btn { 
+    /*btn color */
+    color: black;
+    border-color: rgb(58, 84, 64);
+}
 
 /* contact section */
 #contact {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 70vh;
+    height: 80vh;
 }
 
 .contact-info-upper-container {
     display: flex;
     justify-content: center;
     border-radius: 2rem;
-    border: rgb(58, 84, 64) 0.1rem solid;
-    border-color: rgb(58, 84, 64);
+    border: rgb(208, 196, 176) 0.8rem solid;
+    border-color: rgb(208, 196, 176);
     background: (250,  250, 250);
-    margin: 2rem auto;
+    margin: 9rem auto;
+    margin-bottom: -3rem;
     padding: 0.5rem;
 }
 
+.contact-info-upper-container:hover {
+    box-shadow: 0px 3px 12px 0px rgb(68,98,74);
+}
 .contact-info-container {
     display: flex;
     align-items: center;
@@ -435,4 +484,14 @@ main.row{
 .contact-icon {
     cursor: default;
     height: 5rem;
+}
+
+/* footer section */
+footer {
+    height: 26vh;
+    margin: 0 1 rem;
+}
+
+footer p {
+    text-align: center;
 }
