@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My website</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mdqueries.css" />
+    <!-- <link rel="stylesheet" href="mdqueries.css" /> -->
 </head>
 <body>
     <nav id="desktop-nav">
@@ -38,11 +38,14 @@
                 </div>
             </div>
         </nav>
+
         <section id="profile"> 
             <div class="section_pic-container_main">
                 <img src="./pics/guk_prof.jpg" alt="guk il kim's profile picture" />
             </div>
             <div class="section_text">
+                <!-- add a script here: Researcher, full stack dev, software dev-->
+                <!-- opacity level, change theme + transparency -->
                 <p class="section_text_p1">Hello, I'm</p>
                 <h1 class="title">GUK IL</h1>
                 <p class="section_text_p2">A Software Developer</p>
@@ -68,6 +71,7 @@
             class="icon arrow" onclick="location.href='./#about'" 
         />
         </section>
+
         <section id="about">
             <p class="section_text_p1">Get to know</p>
             <h1 class="title">About Me</h1>
@@ -105,73 +109,72 @@
             <p class="section_text_p1">Check out my</p>
             <h1 class="title">Work Experiences</h1>
             <div class="container">
-	
-            <main class="row">
-                <section class="col">
-                    <header class="title">
-                        <h1>EXPERIENCES</h1>
-                    </header>
+                <main class="row">
+                    <!-- First Column for Experiences -->
+                    <div class="col">
+                        <header class="title">
+                            <h2>EXPERIENCES</h2>
+                        </header>
         
-                    <div class="contents">        
-                        <div class="box">
-                            <h4>2022 - 2023</h4>
-                            <h3>ArcGIS Student Inspector engineer</h3>
-                            <p>I developed an automated script to filter 15,000 ARCADE apj files with invalid paths, significantly reducing the error rate by 99%. Additionally, I inspected and enhanced the ARCGIS model to identify damaged infrastructures on campus, ensuring faculty members were promptly alerted to address safety concerns for students.</p>
-                        </div>
+                        <div class="contents">
+                            <div class="box">
+                                <h4>2022 - 2023</h4>
+                                <h3>ArcGIS Student Inspector engineer</h3>
+                                <p>I developed an automated script to filter 15,000 ARCADE apj files with invalid paths, significantly reducing the error rate by 99%. Additionally, I inspected and enhanced the ARCGIS model to identify damaged infrastructures on campus, ensuring faculty members were promptly alerted to address safety concerns for students.</p>
+                            </div>
         
-                        <div class="box">
-                            <h4>2020 - 2021</h4>
-                            <h3>Full stack Developer</h3>
-                            <p>By implementing the CodeLab website, we achieved a significant 70% increase in new client acquisition. The CodeLab website was developed using React.JS with Grid properties to leverage layers for the frontend and MongoDB for database management to monitor data traffic on the backend server. The backend server was thoroughly tested using Insomnia to confirm that JSON data transmission to the local server was functioning optimally.</p>
-                        </div>
-
-                        <div class="box">
-                            <h4>2020 - 2021</h>
-                            <h3>Automation Developer</h3>
-                            <p>I developed an automation process to transform a physical textbook into an online version incorporating HTML. Additionally, I successfully implemented Mathematics Libretext, which has been accessed and downloaded by numerous UC Davis students.</p>
+                            <div class="box">
+                                <h4>2020 - 2021</h4>
+                                <h3>Full stack Developer</h3>
+                                <p>By implementing the CodeLab website, we achieved a significant 70% increase in new client acquisition. The CodeLab website was developed using React.JS with Grid properties to leverage layers for the frontend and MongoDB for database management to monitor data traffic on the backend server. The backend server was thoroughly tested using Insomnia to confirm that JSON data transmission to the local server was functioning optimally.</p>
+                            </div>
+        
+                            <div class="box">
+                                <h4>2020 - 2021</h4>
+                                <h3>Automation Developer</h3>
+                                <p>I developed an automation process to transform a physical textbook into an online version incorporating HTML. Additionally, I successfully implemented Mathematics Libretext, which has been accessed and downloaded by numerous UC Davis students.</p>
+                            </div>
                         </div>
                     </div>
-                </section>
         
-                <section class="col">
-                    <header class="title">
-                        <h1>LEADERSHIP</h1>
-                    </header>
+                    <!-- Second Column for Leadership -->
+                    <div class="col">
+                        <header class="title">
+                            <h2>LEADERSHIP</h2>
+                        </header>
         
-                    <div class="contents">  
-                        <div class="box">
-                            <h4>2024 - present</h4>
-                            <h3>Team Lead</h3>
-                            <p>Leading the initiative, I organized team meetings and arranged interviews with sponsors to collaborate on developing prototype models. These models aim to ensure accuracy at a low cost, aiding in the testing of flight engineers at a United States Air Force base. This project is currently underway.</p>
-                        </div>
+                        <div class="contents">
+                            <div class="box">
+                                <h4>2024 - present</h4>
+                                <h3>Team Lead</h3>
+                                <p>Leading the initiative, I organized team meetings and arranged interviews with sponsors to collaborate on developing prototype models. These models aim to ensure accuracy at a low cost, aiding in the testing of flight engineers at a United States Air Force base. This project is currently underway.</p>
+                            </div>
         
-                        <div class="box">
-                            <h4>2022 - 2024</h4>
-                            <h3>Software Engineer; researcher</h3>
-                            <p>In collaboration with veterinary students and high school students, I spearheaded the development of the lepto-classifier machine learning model aimed at predicting Feline UTI with 82% accuracy. I oversaw the creation of an AI prediction tool and website using Flask, HTML, and CSS. Additionally, I led the selection and integration of a separate classification model to raise the AUC performance and accuracy to 90% for the primary machine learning model.</p>
-                        </div>
-
-                        <div class="box">
-                            <h4>2023 - 2023</h4>
-                            <h3>Full time Instructor</h3>
-                            <p>I implemented successful teaching and leadership methods to guide K5 kindergarten students while also creating a safe and supportive learning environment for them.</p>
+                            <div class="box">
+                                <h4>2022 - 2024</h4>
+                                <h3>Software Engineer; researcher</h3>
+                                <p>In collaboration with veterinary students and high school students, I spearheaded the development of the lepto-classifier machine learning model aimed at predicting Feline UTI with 82% accuracy. I oversaw the creation of an AI prediction tool and website using Flask, HTML, and CSS. Additionally, I led the selection and integration of a separate classification model to raise the AUC performance and accuracy to 90% for the primary machine learning model.</p>
+                            </div>
+        
+                            <div class="box">
+                                <h4>2023 - 2023</h4>
+                                <h3>Full time Instructor</h3>
+                                <p>I implemented successful teaching and leadership methods to guide K5 kindergarten students while also creating a safe and supportive learning environment for them.</p>
+                            </div>
                         </div>
                     </div>
-                </section>
-            </main>
-        </div>
-        <!-- <img src="./pics/arrow.png" 
-            alt="Arrow icon" 
-            class="icon arrow" onclick="location.href='./#contact'" 
-        /> -->
-    </section>
+                </main>
+            </div>
+            <img src="./pics/arrow.png" alt="Arrow icon" 
+            class="icon pointer" onclick="location.href='./#projects'" />
+        </section>
 
     <section id="projects">
         <p class="section_text_p1">Browse My Recent</p>
         <h1 class="title">Projects</h1>
         <div clas="experience-details-container">
-            <div class="about-containers">
-            <div class="details-container color-container">
+            <div class="proj-containers">
+            <div class="proj-details-container color-container">
                 <div class="article-container">
                     <img src="./proj/p1.png" alt="project 1" class="project-img" />
                     <h2 class="experience-sub-title project-title">Project One</h2>
@@ -182,7 +185,7 @@
                     </button>
                 </div>
             </div>
-            <div class="details-container color-container">
+            <div class="proj-details-container color-container">
                 <div class="article-container">
                     <img src="./proj/p2.png" alt="project 1" class="project-img" />
                     <!-- arcgis/script -->
@@ -193,7 +196,7 @@
                     </button>
                 </div>
             </div>
-            <div class="details-container color-container">
+            <div class="proj-details-container color-container">
                 <div class="article-container">
                     <img src="./proj/p3.png" alt="project 1" class="project-img" />
                     <!-- geo spatial -->
@@ -205,7 +208,7 @@
                 </div>
             </div>
         <!-- change this to logo -->
-            <div class="details-container color-container">
+            <div class="proj-details-container color-container">
                 <div class="article-container">
                     <img src="./proj/lab.png" alt="project 1" class="project-img" />
                     <h2 class="experience-sub-title project-title">Publication</h2>
@@ -230,8 +233,12 @@
         <div class="contact-info-upper-container">
             <div class="contact-info-container">
                 <img src="./pics/mail.png" alt="email icon" class="icon contact-icon" />
-                <p><a href="mailto:kimgukil2@gmail.com">kimgukil2@gmial.com</a></p>
+                <p><a href="mailto:kimgukil2@gmail.com">kimgukil2@gmail.com</a></p>
         </div>
+        <div class="contact-info-container">
+            <img src="./pics/education.png" alt="email icon" class="icon contact-icon" />
+            <p><a href="mailto:gukilkim@usc.edu">gukilkim@usc.edu</a></p>
+    </div>
             <div class="contact-info-container">
                 <img src="./pics/linkedin.png" alt="linkedin icon" class="icon contact-icon" />
                 <p><a href="https://www.linkedin.com/in/gukim1218/">Linkedin</a></p>

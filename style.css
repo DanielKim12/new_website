@@ -5,7 +5,7 @@
 * {
     margin: 0; 
     padding: 0; 
-    background-color: rgb(251, 237, 214);
+    background-color: rgb(256, 256, 256);
 }
 
 body {
@@ -202,7 +202,7 @@ section {
 
 .icon {
     cursor: pointer;
-    height: 2.2rem;
+    height: 2.7rem;
 }
 
 .btn-container { 
@@ -259,12 +259,24 @@ section {
 .about-containers { 
     gap: 1rem;
     margin-bottom: 2rem;
-    margin-top: 9rem;
+    /* margin-top: 1rem; */
     justify-content: center;
     padding-left: 2rem;
     padding-right: 2rem;
     /* padding-top: 9rem; */
 }
+
+.proj-containers { 
+    gap: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 8rem;
+    justify-content: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    /* padding-top: 9rem; */
+    display: flex;
+}
+
 
 .about-details-container {
     justify-content: center;
@@ -289,6 +301,13 @@ section {
     bottom: 2.5rem;
 }
 
+.pointer { 
+    right: 3.5rem;
+    position: absolute;
+    margin-top: 3rem;
+    /* bottom: 2.5rem; */
+}
+
 /* experience 
 .arrow {
     position: absolute;
@@ -303,12 +322,22 @@ section {
 }
 
 .details-container {
-    padding: 1.5rem;
+    padding: 2rem;
     flex: 1;
-    background: rgb(251, 237, 214);
+    background: rgb(256, 256, 256);
     border-radius: 2rem;
-    border: rgb(208, 196, 176) 0.8rem solid;
-    border-color: rgb(208, 196, 176);
+    border: #414141 0.8rem solid;
+    border-color: #414141;
+    text-align: center;
+    transition: box-shadow 0.3s; /* Smooth transition for the effect */
+}
+
+.proj-details-container {
+    padding: 0.2rem;
+    background: rgb(256, 256, 256);
+    border-radius: 2rem;
+    border: #414141 0.8rem solid;
+    border-color: #414141;
     text-align: center;
     transition: box-shadow 0.3s; /* Smooth transition for the effect */
 }
@@ -342,6 +371,7 @@ main.row{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-column-gap: 20px;
+    margin-top: 4rem;
 }
 .col header.title{
     font-size: 2rem;
@@ -356,8 +386,8 @@ main.row{
 .col .contents .box {
 	position: relative;
 	padding: 10px;
-	border: 1px solid rgb(208, 196, 176);
-	background-color: rgb(208, 196, 176);
+	border: 1px solid rgb(256, 256, 256);
+	background-color: #414141;
 	cursor: pointer;
 	transition: all 0.4s;
 	margin-bottom: 25px;
@@ -411,8 +441,8 @@ main.row{
 }
 
 .color-container {
-    border-color: rgb(208, 196, 176);
-    background: rgb(208, 196, 176);
+    border-color: #414141;
+    background: #414141;
 }
 
 .article-container {
@@ -458,8 +488,8 @@ main.row{
     display: flex;
     justify-content: center;
     border-radius: 2rem;
-    border: rgb(208, 196, 176) 0.8rem solid;
-    border-color: rgb(208, 196, 176);
+    border: #414141 0.8rem solid;
+    border-color: #414141;
     background: (250,  250, 250);
     margin: 9rem auto;
     margin-bottom: -3rem;
