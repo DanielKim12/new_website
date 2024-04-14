@@ -46,22 +46,56 @@
         margin-top: 0;
     }
     .proj-containers {
-        /* display: block; */
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
     }
     .section_pic-container, .about-pic {
         width: 200px;
         height: 300px;
-        margin: 0 auto 2rem;
+        margin-left: 2rem;
+    }
+    .box p {
+        font-size: 12px;
+    }
+    h2 {
+        font-size: 1.5rem;
     }
 }
 
-@media screen and (max-width: 6000px) {
+@media screen and (max-width: 600px) {
     #cotact, footer { 
         height: 40vh;
     }
     #profile {
-        height: 83vh;
+        height: 94vh;
         margin-bottom: 0;
+    }
+    #about{
+        height: 230vh;
+        align-items: center;
+    }
+    #projects {
+        height: 335vh;
+    }
+    .project-img {
+        width: 70%;
+        height: auto;
+        margin-top: 10px;
+    }
+    .details-container {
+        padding: 4rem;
+    }
+    .article-container {
+        padding: 0px;
+        width: 274px;
+    }
+    #contacts {
+        height: 40vh;
+    }
+    .btn {
+        width: 7rem;
+        margin-bottom: 10px;
     }
     article{
         font-size: 1rem;
@@ -70,10 +104,18 @@
         height: fit-content;
         margin-bottom: 2rem;
     }
-    .about-containers,
+    .about-containers {
+        flex-wrap: wrap;
+        margin-left: 6rem;
+    }
+    .text-container {
+        display: none;
+    }
     .contact-info-upper-container,
     .btn-container {
         flex-wrap:wrap;
+        margin-bottom: 0;
+        margin: 2rem 1rem;
     }
     .contact-info-container {
         margin: 0;
@@ -86,14 +128,24 @@
         font-size: 1.5rem;
     }
     .nav-links {
-        flex-direction: column;
+        flex-direction: row;
         gap:0.5rem;
         text-align: center;
+        margin-top: 3rem;
     }
     .section_pic-container {
         width: auto;
         height: 46vw;
         justify-content: center;
+    }
+    .section_text_p2 {
+        font-size: 1.25rem;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .text-container {
+        text-align: justify;
     }
 }
 
