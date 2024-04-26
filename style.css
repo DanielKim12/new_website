@@ -169,7 +169,10 @@ section {
 
 .section_text { 
     align-self: center;
-    text-align: center;
+    text-align: center;max-width: 600px; /* Set a maximum width for the text container */
+    width: 600px; /* Fixed width */
+    height: 350px; /* Fixed height */
+    overflow: hidden;
 }
 
 .section_text p { 
@@ -304,7 +307,7 @@ section {
 .pointer { 
     right: 3.5rem;
     position: absolute;
-    margin-top: 3rem;
+    margin-top: 1.5rem;
     /* bottom: 2.5rem; */
 }
 

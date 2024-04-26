@@ -8,6 +8,21 @@
     <link rel="stylesheet" href="mdqueries.css" />
 </head>
 <body>
+
+    <script>
+        window.onload = function() {
+            var titles = ['A Software Developer', 'Full-Stack Developer', 'Researcher/Instructor', 'Ice-Cream lover'];
+            var currentIndex = 0;
+            var titleElement = document.getElementById('dynamic-title');
+            function changeTitle() {
+                titleElement.innerHTML = titles[currentIndex];
+                currentIndex = (currentIndex + 1) % titles.length;
+                setTimeout(changeTitle, 3000); // Change title every 3000 milliseconds (3 seconds)
+            }
+            setTimeout(changeTitle, 3000); // Start the cycle
+        };
+    </script>
+
     <nav id="desktop-nav">
         <div class="logo">GUK IL KIM</div>
         <div>
@@ -44,11 +59,9 @@
                 <img src="./pics/guk_prof.jpg" alt="guk il kim's profile picture" />
             </div>
             <div class="section_text">
-                <!-- add a script here: Researcher, full stack dev, software dev-->
-                <!-- opacity level, change theme + transparency -->
                 <p class="section_text_p1">Hello, I'm</p>
                 <h1 class="title">GUK IL</h1>
-                <p class="section_text_p2">A Software Developer</p>
+                <p class="section_text_p2" id="dynamic-title">A Software Developer</p>
                 <div class="btn-container">
                     <button class="btn btn-color-2"
                     onclick="window.open('./pics/swe.pdf')"> 
