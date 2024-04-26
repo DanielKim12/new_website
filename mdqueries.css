@@ -64,7 +64,7 @@
     .section_text { 
         align-self: center;
         text-align: center; /* Set a maximum width for the text container */
-        width: 400px;
+        width: 370px;
     }
 }
 
