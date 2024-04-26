@@ -11,16 +11,20 @@
 
     <script>
         window.onload = function() {
-            var titles = ['A Software Developer', 'Full-Stack Developer', 'Researcher/Instructor', 'Ice-Cream lover'];
-            var currentIndex = 0;
-            var titleElement = document.getElementById('dynamic-title');
-            function changeTitle() {
-                titleElement.innerHTML = titles[currentIndex];
-                currentIndex = (currentIndex + 1) % titles.length;
-                setTimeout(changeTitle, 3000); // Change title every 3000 milliseconds (3 seconds)
-            }
-            setTimeout(changeTitle, 3000); // Start the cycle
-        };
+            if (window.innerWidth > 1024) {
+                var titles = ['A Software Developer', 'Full-Stack Developer', 'Researcher/Instructor', 'Ice-Cream lover'];
+                var currentIndex = 0;
+                var titleElement = document.getElementById('dynamic-title');
+                
+        function changeTitle() {
+            titleElement.innerHTML = titles[currentIndex];
+            currentIndex = (currentIndex + 1) % titles.length;
+            setTimeout(changeTitle, 2000); // Change title every 3000 milliseconds (3 seconds)
+        }
+
+        setTimeout(changeTitle, 2000); // Start the cycle
+        }
+    };
     </script>
 
     <nav id="desktop-nav">
