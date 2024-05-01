@@ -146,7 +146,7 @@ a:hover {
 /* sections */ 
 section { 
     padding-top: 10vh;
-    height: 96vh; 
+    height: 98vh; 
     margin: 0; 
     box-sizing: border-box;
     min-height: fit-content;
@@ -301,14 +301,21 @@ section {
 .arrow { 
     position: absolute;
     right: 3.5rem; 
-    bottom: 2.5rem;
+    bottom: 2rem;
 }
 
 .pointer { 
     right: 3.5rem;
     position: absolute;
-    margin-top: 1.5rem;
-    /* bottom: 2.5rem; */
+    /* margin-top: 1.5rem; */
+    bottom: 1rem;
+}
+
+#projectsButton { 
+    position: absolute;
+    right: 3.5rem;
+    bottom: -121rem;
+    margin-top: 10rem;
 }
 
 /* experience 
